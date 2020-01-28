@@ -15,7 +15,7 @@
         </div> -->
         <div class="col-md-2" *ngFor="let number of jogo">
           <section class="stage">
-            <figure class="ball">
+            <figure class="ball"  [ngClass]="{'is-active': numberFound(number)}">
               <span class="shadow"></span>
               <span class="eight" [attr.data-content]="number"></span> 
             </figure>
